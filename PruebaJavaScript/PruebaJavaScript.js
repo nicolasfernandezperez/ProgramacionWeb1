@@ -4,7 +4,7 @@ switch(operacion){
         multiplicar()
     break;
 }
-const multiplicar=()=>{
+const multiplicar=(num1, num2)=>{
     +prompt(num1);
     +prompt(num2);
     alert(num1*num2);
