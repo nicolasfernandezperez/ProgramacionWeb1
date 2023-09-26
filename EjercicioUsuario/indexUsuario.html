@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="stylesUsuario.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Cosas por Hacer</h1>
+        <div class="form">
+            <input type="text" id="taskInput" placeholder="Añadir una tarea...">
+            <button onclick="addTask()">Agregar</button>
+        </div>
+        <ul id="taskList"></ul>
+        <button onclick="clearCompletedTasks()">Borrar completadas</button>
+    </div>
+    <script src="scriptUsuario.js"></script>
+</body>
+
+</html>
