@@ -1,5 +1,5 @@
 let cont = 0;
-const fotos = ["EjercicioGaleria/lambo01.jpg", "EjercicioGaleria/gtr02.jpg", "EjercicioGaleria/rally03.jpg"];
+const fotos = ["images/lambo01.jpg", "images/gtr02.jpg", "images/rally03.jpg"];
 const prev = () => {
     cont --;
     if(cont < 0) {
@@ -15,6 +15,5 @@ const next = () =>{
     }
     document.getElementById("image").src = fotos[cont];
 };
-document.getElementById("prevButton").onclick = prev;
-document.getElementById("nextButton").onclick = next;
+
 
