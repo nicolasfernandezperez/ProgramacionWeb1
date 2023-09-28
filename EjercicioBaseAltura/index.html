@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Introduzca en los siguientes cuadros la base y la altura de la que quiera calcular el área</h1>
-        
+    <h2>Introduzca en los siguientes cuadros la base y la altura de la que quiera calcular el área</h2>
+    <div id = "container">
+        <input type = "radio" id = "triangulo" name = "figura" checked><label>Triangulo</label>
+        <input type = "radio" id = "rectangulo" name = "figura"><label>Rectangulo</label>
+    </div>
+
+    <div id = "datos">
+        <br><label>Introduzca una base </label><input type = "text" id = "base" size = "4"></br>
+        <br><label>Introduzca una altura </label><input type = "text" id = "altura" size = "4"></br>
+    </div>
+
+    <div id = "botones">
+        <br><input type = "button" onclick = calcular() value = "Calcular"></br>
+        <br><label>El resultado es: </label><input type = "text" id = "resultado" size = "3"></br>
+        <br><input type = "reset" value = "Borrar">
     </div>
 </body>
-
 </html>
