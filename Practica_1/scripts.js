@@ -206,6 +206,7 @@ const procesarResultado = (opcion1, opcion2) =>{
 }
 
 const finalizar = () =>{
+
     if (puntuacion1 > puntuacion2) {
         alert(`Ha ganado ${jugadores[0]}`);
     } else if (puntuacion1 < puntuacion2) {
