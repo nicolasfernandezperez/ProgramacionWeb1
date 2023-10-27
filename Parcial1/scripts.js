@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const playerHands = [0, 0, 0]; 
-    let currentPlayer = 0; 
+    const playerHands = [1, 1, 1]; 
+    let currentPlayer = 2; 
     let round = 1; 
     let playerScores = [0, 0, 0];
     let isGameOver = false;
