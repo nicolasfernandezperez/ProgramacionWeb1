@@ -1,0 +1,41 @@
+/* Contenedor de tarea */
+.todo-container {
+  width: 480px;
+  min-height: 60px;
+  margin: 10px;
+  padding: 2px 20px 2px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+}
+
+/* Colores de fondo para las tareas */
+.todo-container:nth-child(3n + 1) {
+  background-color: blue;
+}
+.todo-container:nth-child(3n + 2) {
+  background-color: blue;
+}
+.todo-container:nth-child(3n + 3) {
+  background-color: blue;
+}
+
+/* Tarea completada */
+.todo-container.completed {
+  text-decoration: line-through;
+}
+
+/* Texto */
+.todo-text {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+/* Iconos */
+.todo-icon-container,
+.todo-icon {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}

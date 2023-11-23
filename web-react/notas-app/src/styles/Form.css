@@ -1,0 +1,29 @@
+/* Estructura principal */
+.form-todo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Campo de texto */
+.input-todo {
+  width: 350px;
+  font-size: 18px;
+  background-color: white;
+  padding: 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* Botón para añadir tarea */
+.button-todo {
+  padding: 14px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  border-radius: 0 4px 4px 0;
+  border-color: blue;
+  background: blue;
+  color: white;
+}

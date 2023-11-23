@@ -1,0 +1,43 @@
+body {
+  color: white;
+  background-color: white;
+  font-family: Lato, sans-serif;
+  margin-top: 20px;
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo de u-tad */
+.utad-logo-container {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.utad-logo {
+  height: 100px;
+}
+
+/* Lista de tareas */
+.todo-list {
+  width: 600px;
+  background-color: grey;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
