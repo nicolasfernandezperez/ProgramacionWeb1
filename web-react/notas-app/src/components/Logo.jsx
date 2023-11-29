@@ -2,7 +2,7 @@ import logo from '../logo/Logo-U-tad.webp';
 
 function Logo() {
   return (
-    <div className="utad-logo-container">
+    <div>
       <img
         className="utad-logo"
         src={logo}

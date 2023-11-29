@@ -1,41 +1,36 @@
-/* Contenedor de tarea */
-.todo-container {
-  width: 480px;
-  min-height: 60px;
+/* Estilos para el componente notaSingle */
+.notaSingle {
+  background-color: #3498db; /* Azul brillante */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
   margin: 10px;
-  padding: 2px 20px 2px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 7px;
+  position: relative; /* Añadido para posición relativa */
 }
 
-/* Colores de fondo para las tareas */
-.todo-container:nth-child(3n + 1) {
-  background-color: blue;
-}
-.todo-container:nth-child(3n + 2) {
-  background-color: blue;
-}
-.todo-container:nth-child(3n + 3) {
-  background-color: blue;
+/* Estilos para el título */
+.notaSingle h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-/* Tarea completada */
-.todo-container.completed {
-  text-decoration: line-through;
+/* Estilos para el botón de borrar */
+.notaSingle button {
+  background-color: #e74c3c; /* Rojo brillante */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición de color al pasar el ratón */
+  position: absolute; /* Añadido para posición absoluta */
+  bottom: 10px; /* Añadido para separar el botón desde abajo */
+  right: 10px; /* Añadido para alinear el botón a la derecha */
 }
 
-/* Texto */
-.todo-text {
-  flex: 1;
-  overflow-wrap: anywhere;
-}
-
-/* Iconos */
-.todo-icon-container,
-.todo-icon {
-  width: 25px;
-  height: 25px;
-  margin: 5px;
+/* Cambiar el color del botón al pasar el ratón */
+.notaSingle button:hover {
+  background-color: #c0392b; /* Rojo más oscuro */
 }

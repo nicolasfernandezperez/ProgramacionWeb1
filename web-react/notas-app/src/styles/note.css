@@ -1,0 +1,32 @@
+/* note.css */
+.notas {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  /* Estilo para el h2 */
+  .notas h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el botón */
+  .notas button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto hover para el botón */
+  .notas button:hover {
+    background-color: darkred;
+  }
+  

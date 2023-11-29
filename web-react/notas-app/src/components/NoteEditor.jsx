@@ -2,56 +2,53 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import '../styles/Form.css';
 
-function FormToDo(props) {
+function NoteEditor ( {addTask} ) {
 
-  const [input, setInput] = useState('');
-  const [note, setNote] = useState('');
+  const [titulo, setTitulo]= useState('')
+  const [contenido, setContenido] = useState('')
 
-  const handleChangeNote = (event) => {
-    setNote(event.target.value);
-  }
-
-  const handleChange = (event) => {
-    setInput(event.target.value);
-  }
-
-  const handleSend = (event) => {
-    //Para que no se vuelva a cargar la página al enviar el formulario
-    event.preventDefault(); 
-
+  const handleSend = () => {
     //Creamos un nuevo objeto 
     const newTask = {
       id: uuidv4(),
-      title: input,
-      note: note,
-      completed: false
-    }
+      titulo: titulo,
+      contenido: contenido,
+    };
 
-    //Se lo pasaremos al componente padre ListToDo cuando se envía, tenemos que pasar onSumbit(nombre estándar) como prop desde ListToDo.
-    props.onSubmit(newTask);
+    addTask(newTask);
+    setTitulo('');
+    setContenido('');
+    
   };
 
+  const agregar = () =>{
+    handleSend()
+  }
+
   return (
-    <form 
-      className='form-todo'
+    <div
       onSubmit={handleSend}>
       <input
         className='input-todo'
-        type='title'
-        name="title"
-        onChange={handleChange}
+        type='titulo'
+        placeholder="Titulo"
+        name="titulo"
+        value={titulo}
+        onChange={(e) => setTitulo(e.target.value)}
       />
       <input
         className='input-todo'
-        type='note'
-        name="note"
-        onChange={handleChangeNote}
+        type='contenido'
+        placeholder="Contenido"
+        name="contenido"
+        value={contenido}
+        onChange={(e) => setContenido(e.target.value)}
       />
-      <button className='button-todo'>
+      <button className='button-todo' onClick={agregar}>
         Añadir Nota
       </button>
-    </form>
+    </div>
   );
 }
 
-export default FormToDo;
+export default NoteEditor;

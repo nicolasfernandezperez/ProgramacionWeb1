@@ -1,0 +1,57 @@
+/* Estilos para el contenedor de notas vacío */
+.notasEmpty {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Agrega esto a tu archivo de estilos */
+/* noteList.css */
+
+/* Agrega esto a tu archivo de estilos */
+/* noteList.css */
+
+/* Agrega esto a tu archivo de estilos */
+/* noteList.css */
+
+@keyframes textTransformAnimation {
+  0%, 100% {
+    text-transform: uppercase;
+    color: #333; /* Color inicial (puedes ajustarlo) */
+  }
+  50% {
+    text-transform: lowercase;
+    color: red; /* Color intermedio (puedes ajustarlo) */
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.7; /* Opacidad inicial y final  */
+  }
+  50% {
+    opacity: 1; /* Opacidad intermedia  */
+  }
+}
+
+.notasEmpty p {
+  display: inline-block;
+  animation: textTransformAnimation 2s linear infinite alternate,
+             fadeInOut 2s linear infinite alternate;
+}
+
+
+
+
+
+/* Estilos para las notas individuales */
+.notasNotEmpty > div {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+

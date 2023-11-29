@@ -1,43 +1,69 @@
-body {
-  color: white;
-  background-color: white;
-  font-family: Lato, sans-serif;
+/* Estilos para el contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el logo */
+.Logo {
   margin-top: 20px;
 }
 
-h1 {
-  color: black;
-  font-size: 30px;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  margin: 20px;
-}
-
-.App {
+/* Estilos para el contenedor de editor y lista de notas */
+.EditorListaContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 80%; /* Ancho del 80% del contenedor */
 }
 
-/* Logo de u-tad */
-.utad-logo-container {
-  width: 100%;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Estilos para el editor de notas */
+.Editor {
+  margin-top: 20px;
+  width: 48%; /* Ancho del 48% del contenedor */
 }
 
-.utad-logo {
-  height: 100px;
+/* Estilos para la lista de notas */
+.listaNotas {
+  margin-top: 20px;
+  width: 48%; /* Ancho del 48% del contenedor */
 }
 
-/* Lista de tareas */
-.todo-list {
-  width: 600px;
-  background-color: grey;
-  padding: 25px;
-  margin: 10px;
-  border-radius: 26px;
+/* Estilos para cada nota individual */
+.listaNotas .nota {
+  background-color: #3498db; /* Azul brillante */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Estilos para el título de cada nota */
+.listaNotas .nota h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de borrar dentro de cada nota */
+.listaNotas .nota button {
+  background-color: #e74c3c; /* Rojo brillante */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición de color al pasar el ratón */
+}
+
+/* Cambiar el color del botón al pasar el ratón */
+.listaNotas .nota button:hover {
+  background-color: #c0392b; /* Rojo más oscuro */
+}
+
+/* Estilos para el buscador */
+.Buscador {
+  margin-top: 20px;
+  width: 48%; /* Ancho del 48% del contenedor */
 }

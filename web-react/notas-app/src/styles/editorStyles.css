@@ -1,0 +1,87 @@
+/* Estilos para el contenedor principal */
+.saveNote {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Ocupa todo el ancho de la pantalla disponible */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+  .content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100%; /* Ocupa todo el espacio vertical disponible en el contenedor */
+  }
+  
+  /* Estilos para el contenido */
+  .content textarea {
+    width: 100%; /* Haz que el textarea tenga la misma longitud que el input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 150px;
+    resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Estilos para el botón de guardar */
+  .saveButton button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .saveButton button:hover {
+    background-color: #005a9c;
+  }
+  .title {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .title input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Ajusta el padding a tu preferencia */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
+  }
+  
+  /* Estilo cuando se pasa el mouse por encima */
+  .button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  /* Estilo para el botón cuando se hace clic */
+  .button:active {
+    background-color: #003080; /* Cambia el color de fondo al hacer clic */
+  }
+  
+  

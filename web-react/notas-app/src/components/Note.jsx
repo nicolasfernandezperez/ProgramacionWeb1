@@ -1,27 +1,17 @@
 import '../styles/Todo.css';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-function ToDo({ id, title, note, completed, completeToDo, deleteToDo }) { 
+function Note({ id, titulo, contenido, deleteTask }) { 
 
   return (
-    <div className={completed ? "todo-container completed" : "todo-container"}>
-      <div 
-        className="todo-title"
-        onClick={() => completeToDo(id)}>
-        {title}
-      </div>
-      <div 
-        className="todo-note"
-        onClick={() => completeToDo(id)}> 
-        {note}
-      </div>
-      <div 
-        className="todo-icon-container"
-        onClick={() => deleteToDo(id)}>
-        <AiOutlineCloseCircle className="todo-icon" />
+    <div className='notaSingle'>
+      <h2>Nota {id}</h2>  
+      {titulo} <br />
+      {contenido}
+      <div>
+        <button onClick={deleteTask}>Borrar</button>
       </div>
     </div>
   )
 }
 
-export default ToDo
+export default Note

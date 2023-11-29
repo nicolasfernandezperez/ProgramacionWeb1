@@ -1,10 +1,11 @@
-import { useRef } from 'react';
+import React, { useRef } from "react";
+import '../styles/noteBuscador.css'; 
 
-function Search({onSearch}) {
-  let inputRef = useRef(null);
+function NoteBuscador({ onSearch }) {
+  const inputRef = useRef(null);
 
   const handleSearch = () => {
-    let searchTerm = inputRef.current.value;
+    const searchTerm = inputRef.current.value;
     console.log('Valor del input:', searchTerm);
     onSearch(searchTerm);
   };
@@ -24,4 +25,6 @@ function Search({onSearch}) {
   );
 }
 
-export default Search;
+
+
+export default NoteBuscador;
