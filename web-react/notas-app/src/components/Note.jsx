@@ -8,7 +8,7 @@ function Note({ id, titulo, contenido, deleteTask }) {
       {titulo} <br />
       {contenido}
       <div>
-        <button onClick={deleteTask}>Borrar</button>
+        <br /><br /><button onClick={deleteTask}>Borrar</button>
       </div>
     </div>
   )
