@@ -1,1 +1,1 @@
-[{"id":"b9d4f46b-ce2f-48f4-815a-b1ff76224a24","commerceName":"ddddddddddddddd","email":"mglmonchi@gmail.com","phone":"342434324","cif":"23232322z","addres":"dsadsa"},{"id":"edef52a5-810e-45d6-908d-de5dae938779","commerceName":"comercio","email":"com@gmail.com","phone":"232131223","cif":"23123131z","addres":"jnadjasj"}]
+[]
