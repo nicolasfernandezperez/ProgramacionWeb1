@@ -124,31 +124,25 @@ function Login() {
             {errors.password && <span className="text-red-500 text-sm">{errors.password.message}</span>}
           </div>
           <div className="flex items-center justify-between">
-            <div className="flex items-start">
-              <input
-                id="remember"
-                aria-describedby="remember"
-                type="checkbox"
-                className="w-4 h-4 border border-gray-300 rounded bg-white focus:ring-3 focus:ring-primary-500"
-              />
-              <label htmlFor="remember" className="ml-2 text-sm text-gray-700">Recordarme</label>
-            </div>
+            
             <p className="text-sm font-light text-blue-700">
               No tienes cuenta? <Link href="/register" className="font-medium text-blue-700 hover:underline">Regístrarse</Link>
             </p>
           </div>
           <button
             type="submit"
-            className="w-full p-2 bg-green-400 hover:bg-primary-700 text-white rounded-md focus:outline-none focus:ring focus:border-primary-500"
+            className="w-full p-2 bg-lime-500 hover:bg-lime-700 text-white rounded-md "
+
           >
             Iniciar Sesión
           </button>
         </form>
         <button
           onClick={privateMode}
-          className="w-full mt-4 p-2 bg-purple-500 hover:bg-purple-700 text-white rounded-md focus:outline-none focus:ring focus:border-purple-500"
+          className="w-full mt-4 p-2 bg-blue-500 hover:bg-blue-700 text-white rounded-md focus:outline-none focus:ring focus:border-blue-500"
+
         >
-          Modo Incógnito
+          Continuar sin iniciar sesión
         </button>
       </div>
     </div>

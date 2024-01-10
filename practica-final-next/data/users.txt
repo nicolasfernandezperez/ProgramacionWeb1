@@ -1,1 +1,1 @@
-[]
+[{"id":"4574f8c0-2add-4cf7-88a6-843e3ff3452a","userType":"admin","adminMode":true,"email":"admin1@gmail.com","age":"12","password":"123456","city":"Torrejón de Ardoz"},{"id":"e440e57e-76a3-47e1-b624-f6f637473ba2","userType":"merchant","adminMode":false,"email":"mercadona@gmail.com","age":"23","password":"123456","city":"Aranjuez"},{"id":"86951134-9f12-4dbd-8536-30fe111d68d2","userType":"user","adminMode":false,"email":"user@gmail.com","age":"23","password":"123456","city":"San Sebastián de los Reyes"}]

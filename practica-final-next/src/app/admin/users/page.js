@@ -44,9 +44,11 @@ export default function UserListShow() {
             <div className="w-3/4 p-3 ">
                 <UserList userFilter={filtrada} />
             </div>
-            <div className=" mt-10 w-1/4  h-screen p-3 bg-gradient-to-r from-slate-500 to-blue-500">
-                <h2 className="text-xl font-semibold text-white mb-4">Buscar Usuario</h2>
-                <SearchBar onSearch={handleSearch} />
+            <div className="mt-10 mx-auto w-1/3 p-4 bg-gradient-to-br from-gray-300 to-gray-400 shadow-md rounded-lg">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Buscar Usuario</h2>
+                <div className="flex justify-center">
+                    <SearchBar onSearch={handleSearch} />
+                </div>
             </div>
         </div>
     )

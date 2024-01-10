@@ -26,26 +26,25 @@ function Merch({ user, onClick }) {
     }, [user]); 
 
     return (
-        <div className="flex flex-col items-center justify-center ">
-          <h1 className=" text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl mb-10">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 ">
-              Comercios
-            </span>    
-          </h1>
-          {commerces.map((commerce) => (
-            <div
-              key={commerce.id}
-              className="w-1/2 p-8 bg-slate-300 rounded-lg mb-4 cursor-pointer hover:bg-slate-400"
-              onClick={() => onClick(commerce)}
-            >
-              <p className="text-2xl text-slate-950 mb-2">{commerce.commerceName}</p>
-              <hr className="my-6 border-1 border-gray-500" />
-              <p className="font-bold text-slate-950">{commerce.id}</p>
-              <p className="font-bold text-slate-950">{commerce.email}</p>
-            </div>
-          ))}
-        </div>
-      );
+      <div className="flex flex-col items-center justify-center  ">
+        <h1 className="text-4xl font-bold text-blue-700 md:text-6xl lg:text-7xl mb-12">
+          Comercios
+        </h1>
+        {commerces.map((commerce) => (
+          <div
+            key={commerce.id}
+            className="w-3/4 md:w-1/2 p-6 m-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out cursor-pointer"
+            onClick={() => onClick(commerce)}
+          >
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-3">{commerce.commerceName}</h2>
+            <hr className="border-t-2 border-blue-300" />
+            <p className="text-gray-600 mt-2">ID: {commerce.id}</p>
+            <p className="text-gray-600">Email: {commerce.email}</p>
+          </div>
+        ))}
+      </div>
+    );
+    
       
       
     

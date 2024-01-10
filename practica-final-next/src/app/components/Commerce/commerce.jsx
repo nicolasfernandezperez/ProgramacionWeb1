@@ -1,5 +1,6 @@
 "use client";
 import toast from 'react-hot-toast';
+
 const deleteComerces = async (commerceID) => {
     const confirmDelete = window.confirm("¿Estás seguro de querer eliminar este comercio?");
     console.log("Borrar:", commerceID)
