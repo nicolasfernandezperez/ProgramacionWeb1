@@ -1,1 +1,1 @@
-[{"id":"64393e8f-ca02-424e-a168-69e70855cab7","commerceName":"mercadona","email":"mercadona@gmail.com","phone":"123124324","cif":"12342341z","addres":"madrid"}]
+[]

@@ -1,6 +1,4 @@
 "use client" 
-// components/SearchBar.js
-// components/SearchBar.js
 import React, { useRef } from "react";
 
 const SearchBar = ({ onSearch }) => {
