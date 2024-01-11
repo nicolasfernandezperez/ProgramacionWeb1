@@ -1,1 +1,1 @@
-[{"id":"3ddc8408-1d0f-4bda-ad1d-abaca251b2d7","userType":"admin","adminMode":true,"email":"admin@gmail.com","age":"30","password":"123456","city":"Madrid"},{"id":"d77be768-2206-49ec-8b5f-51c695295ed5","userType":"merchant","adminMode":false,"email":"mercadona@gmail.com","age":"25","password":"123456","city":"Alcobendas"},{"id":"dfae93f8-4c26-4e4b-bb61-ca9330d017ff","userType":"user","adminMode":false,"email":"user@gmail.com","age":"20","password":"123456","city":"Pozuelo de Alarcón"}]
+[]
